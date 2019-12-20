@@ -57,10 +57,8 @@ npm run serve
 - Make Git commits
 
 ```sh
-npm run commit
+git commit -m "commit message"
 ```
-
-*We use the [commitizen command line utility](https://github.com/commitizen/cz-cli), you'll be prompted to fill out any required commit fields at commit time. You would not need to run `git commit` again.*
 
 ## Format and lint
 
