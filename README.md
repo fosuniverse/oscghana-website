@@ -30,7 +30,7 @@ cd oscghana-website
 git checkout -b aboutus-component
 ```
 
-- Start development servers
+- Start development server
 
 ```sh
 npm run develop
