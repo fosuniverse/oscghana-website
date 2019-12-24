@@ -57,7 +57,7 @@ npm run serve
 - Make Git commits
 
 ```sh
-git commit -m "commit message"
+git commit -m "commit messages"
 ```
 
 ## Format and lint
