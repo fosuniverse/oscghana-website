@@ -2,7 +2,7 @@
 
 - [Fork this repository](https://help.github.com/articles/fork-a-repo/)
 
-- Clone the forked repository like so:
+- Clone the forked repository:
 
 ```sh
 git clone https://github.com/<your username>/oscghana-website.git && cd oscghana-website
@@ -18,7 +18,7 @@ git clone https://github.com/<your username>/oscghana-website.git && cd oscghana
 npm install -g gatsby-cli
 ```
 
-- Change directories into site folder
+- Change directories into site folder in your computer
 
 ```sh
 cd oscghana-website
@@ -57,7 +57,7 @@ npm run serve
 - Make Git commits
 
 ```sh
-git commit -m "commit message"
+git commit -m "commit messages"
 ```
 
 ## Format and lint
