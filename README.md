@@ -68,7 +68,7 @@ git commit -m "commit messages"
 npm run analyze
 ```
 
-- Run Prettier and ESLint with the --fix option
+- Run Prettier and ESLint with the --fix options
 
 ```sh
 npm run fix
