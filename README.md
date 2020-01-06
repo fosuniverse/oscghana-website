@@ -10,7 +10,7 @@ git clone https://github.com/<your username>/oscghana-website.git && cd oscghana
 
 - Read the [Contributors Guide](https://github.com/oscghana/docs/blob/master/docs/contribute.md)
 
-## Installation Guide
+## Installation Guides
 
 - Install the Gatsby CLI
 
@@ -27,7 +27,7 @@ cd oscghana-website
 - Create and checkout to a new branch for your feature
 
 ```sh
-git checkout -b aboutus-component
+git checkout -b about-us-component
 ```
 
 - Start development server
