@@ -73,3 +73,5 @@ npm run analyze
 ```sh
 npm run fix
 ```
+## UI guide
+- The design team have designed the [UI AND COMPONENTS](https://xd.adobe.com/view/46c10c27-2956-4d5f-43c0-a59e2d991194-30f0/) be sure to check them and develop accordinly.
