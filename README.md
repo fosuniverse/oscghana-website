@@ -8,7 +8,7 @@
 git clone https://github.com/<your username>/oscghana-website.git && cd oscghana-website
 ```
 
-- Read the [Contributors Guide](https://github.com/oscghana/docs/blob/master/docs/contribute.md)
+- Read the [Contributors Guide](https://github.com/oscghana/oscghana-website/blob/master/CONTRIBUTING.md)
 
 ## Installation Guide
 
