@@ -24,7 +24,7 @@ npm install -g gatsby-cli
 cd oscghana-website
 ```
 
-- Create and checkout to a new branch for your feature
+- Create and checkout to a new branch for your features
 
 ```sh
 git checkout -b about-us-component
