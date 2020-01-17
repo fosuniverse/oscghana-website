@@ -2,6 +2,9 @@
 
 Hey, there! 👋 We welcome all kinds of contributions, please feel free to contribute and/or ask questions.
 
+## UI guide
+- The design team have designed the [UI AND COMPONENTS](https://xd.adobe.com/view/46c10c27-2956-4d5f-43c0-a59e2d991194-30f0/) be sure to check them and develop accordinly.
+
 ## Tech Stacks
 
 > A tech stack is the set of technologies an organization uses to build a web or mobile application. It is a combination of programming languages, frameworks, libraries, patterns, servers, design tools, and tools used by its developers.
