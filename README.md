@@ -10,7 +10,7 @@ git clone https://github.com/<your username>/oscghana-website.git && cd oscghana
 
 - Read the [Contributors Guide](https://github.com/oscghana/oscghana-website/blob/master/CONTRIBUTING.md)
 
-## Installation Guide
+## Installation Guides
 
 - Install the Gatsby CLI
 
@@ -24,10 +24,10 @@ npm install -g gatsby-cli
 cd oscghana-website
 ```
 
-- Create and checkout to a new branch for your feature
+- Create and checkout to a new branch for your features
 
 ```sh
-git checkout -b aboutus-component
+git checkout -b about-us-component
 ```
 
 - Start development server
@@ -36,7 +36,7 @@ git checkout -b aboutus-component
 npm run develop
 ```
 
-*Gatsby will start a hot-reloading development environment accessible by default at localhost:8000*
+*Gatsby will start a hot-reloading developments environment accessibles by default at localhost:8000*
 
 - Create a production build
 
@@ -68,7 +68,7 @@ git commit -m "commit messages"
 npm run analyze
 ```
 
-- Run Prettier and ESLint with the --fix option
+- Run Prettier and ESLint with the --fix options
 
 ```sh
 npm run fix
