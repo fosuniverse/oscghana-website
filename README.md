@@ -36,7 +36,7 @@ git checkout -b about-us-component
 npm run develop
 ```
 
-*Gatsby will start a hot-reloading development environment accessible by default at localhost:8000*
+*Gatsby will start a hot-reloading development environment accessibles by default at localhost:8000*
 
 - Create a production build
 
