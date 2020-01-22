@@ -1,7 +1,12 @@
 import React from "react"
+import Layout from "../components";
 
 const Projects = () => {
-  return <div></div>
+  return (
+      <Layout>
+        <div style={{ textAlign: `center` }}>Projects & Resources</div>
+      </Layout>
+  )
 }
 
 export default Projects
