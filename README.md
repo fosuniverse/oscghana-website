@@ -36,7 +36,7 @@ git checkout -b aboutus-component
 npm run develop
 ```
 
-*Gatsby will start a hot-reloading development environment accessible by default at localhost:8000*
+_Gatsby will start a hot-reloading development environment accessible by default at localhost:8000_
 
 - Create a production build
 
@@ -44,7 +44,7 @@ npm run develop
 npm run build
 ```
 
-*Gatsby will perform an optimized production build, generating static HTML and per-route JavaScript code bundles.*
+_Gatsby will perform an optimized production build, generating static HTML and per-route JavaScript code bundles._
 
 - Serve the production build locally
 
@@ -52,7 +52,7 @@ npm run build
 npm run serve
 ```
 
-*Gatsby starts a local HTML server for testing the built site. Remember to build the site using gatsby build before using this command.*
+_Gatsby starts a local HTML server for testing the built site. Remember to build the site using gatsby build before using this command._
 
 - Make Git commits
 
@@ -73,5 +73,7 @@ npm run analyze
 ```sh
 npm run fix
 ```
+
 ## UI guide
+
 - The design team have designed the [UI AND COMPONENTS](https://xd.adobe.com/view/46c10c27-2956-4d5f-43c0-a59e2d991194-30f0/) be sure to check them and develop accordinly.

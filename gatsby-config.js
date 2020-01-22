@@ -2,16 +2,16 @@ module.exports = {
   siteMetadata: {
     title: `Open Source Community - Ghana`,
     description: `Description of website for Open Source Community - Ghana.`,
-    canonicalUrl: 'https://eloquent-northcutt-54c6c5.netlify.com',
+    canonicalUrl: "https://eloquent-northcutt-54c6c5.netlify.com",
     author: `@oscghana`,
     organization: {
-      name: 'Open Source Community - Ghana',
-      url: 'https://eloquent-northcutt-54c6c5.netlify.com',
+      name: "Open Source Community - Ghana",
+      url: "https://eloquent-northcutt-54c6c5.netlify.com",
     },
     categories: [
       {
-        slug: 'open-source',
-        name: 'open source',
+        slug: "open-source",
+        name: "open source",
       },
     ],
   },
