@@ -1,0 +1,37 @@
+.btn {
+  &--menu-alt {
+    border: none;
+    color: #1e531d;
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    background: #fff none;
+    position: fixed;
+    left: 50%;
+    margin-left: -1.75em;
+    bottom: -1.75em;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 11;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #1e531d;
+    }
+  }
+
+  &--menu-alt:focus {
+    outline: transparent;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    &--menu-alt {
+      font-size: 1em;
+    }
+  }
+}

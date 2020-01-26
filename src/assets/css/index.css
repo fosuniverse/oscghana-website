@@ -7,16 +7,23 @@ body {
 }
 
 body {
-  background-color: #e8e8e8;
+  background-color: #f5f5f5;
   color: #444;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 160%;
 }
 
-a, a:active, a:hover, a:focus {
+a,
+a:active,
+a:hover,
+a:focus {
   color: #3da639;
   text-decoration: none;
   background: 0 0;
+}
+
+main {
+  min-height: 500px;
 }
 
 .container {
@@ -44,6 +51,24 @@ a, a:active, a:hover, a:focus {
   }
 }
 
+.btn--menu-alt {
+  border: none;
+  color: #1e531d;
+  text-align: center;
+  font-size: 1.8em;
+  padding-bottom: 1em;
+  height: 3.5em;
+  width: 3.5em;
+  background: #fff none;
+  position: fixed;
+  left: 50%;
+  margin-left: -1.75em;
+  bottom: -1.75em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+}
+
 .btn--menu-alt:hover,
 .btn--menu-alt:active,
 .btn--menu-alt:focus {
@@ -54,7 +79,12 @@ a, a:active, a:hover, a:focus {
   outline: transparent;
 }
 
-/* start main menu */
+@media screen and (max-width: 480px) {
+  .btn--menu-alt {
+    font-size: 1em;
+  }
+}
+
 .menu {
   background: #fff;
 }
@@ -91,7 +121,6 @@ a, a:active, a:hover, a:focus {
   line-height: 150%;
   display: inline-block;
 }
-/* end main menu */
 
 .menu-alt__wrap {
   font-size: 1em;
@@ -114,10 +143,6 @@ a, a:active, a:hover, a:focus {
   transition: all 0.3s ease;
 }
 
-.menu-alt__list {
-  position: relative;
-}
-
 .menu-alt__wrap--show {
   border-radius: 50%;
   pointer-events: auto;
@@ -125,6 +150,10 @@ a, a:active, a:hover, a:focus {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+.menu-alt__list {
+  position: relative;
 }
 
 .menu-alt__overlay {
@@ -149,24 +178,6 @@ a, a:active, a:hover, a:focus {
   opacity: 1;
 }
 
-.btn--menu-alt {
-  border: none;
-  color: #1e531d;
-  text-align: center;
-  font-size: 1.8em;
-  padding-bottom: 1em;
-  height: 3.5em;
-  width: 3.5em;
-  background: #fff none;
-  position: fixed;
-  left: 50%;
-  margin-left: -1.75em;
-  bottom: -1.75em;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 11;
-}
-
 .menu-alt__item {
   position: absolute;
   font-size: 1.5em;
@@ -185,37 +196,6 @@ a, a:active, a:hover, a:focus {
   -moz-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
-
-.menu-alt__link {
-  display: block;
-  font-size: 1.18em;
-  height: 14.5em;
-  width: 14.5em;
-  position: absolute;
-  bottom: -7.25em;
-  right: -7.25em;
-  border-radius: 50%;
-  text-decoration: none;
-  color: #fff;
-  padding-top: 1.8em;
-  text-align: center;
-  -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
-  -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
-  -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
-  transform: skew(-50deg) rotate(-70deg) scale(1);
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 0.3s, color 0.3s;
-  -moz-transition: opacity 0.3s, color 0.3s;
-  transition: opacity 0.3s, color 0.3s;
-}
-
-.menu-alt__icon {
-  opacity: 0.9;
-}
-
-/* for a central angle x, the list items must be skewed by 90-x degrees
-in our case x=40deg so skew angle is 50deg
-items should be rotated by x, minus (sum of angles - 180)2s */
 
 .menu-alt__item--1 {
   -webkit-transform: rotate(-10deg) skew(50deg);
@@ -252,39 +232,86 @@ items should be rotated by x, minus (sum of angles - 180)2s */
   transform: rotate(150deg) skew(50deg);
 }
 
-.menu-alt__item:nth-child(odd) .menu-alt__link {
-  background-color: #3da639;
+.menu-alt__link {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.8em;
+  text-align: center;
+  -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+  -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+  transform: skew(-50deg) rotate(-70deg) scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
 }
 
-.menu-alt__item:nth-child(even) .menu-alt__link {
-  background-color: #3da639;
-}
-
-/* active style */
-.menu-alt__item--active .menu-alt__link {
+.menu-alt__item--active .menu-alt-alt__link {
   background-color: #1e531d;
 }
 
-/* hover style */
-.menu-alt__item:not(.menu-alt__item--active) .menu-alt__link:hover,
-.menu-alt__item:not(.menu-alt__item--active) .menu-alt__link:active,
-.menu-alt__item:not(.menu-alt__item--active) .menu-alt__link:focus {
-  background-color: #1e531d;
-}
-.menu-alt__item:not(.menu-alt__item--active) .menu-alt__link:focus {
-  position:fixed;
+.menu-alt__item:nth-child(odd) .menu-alt-alt__link {
+  background-color: #3da639;
 }
 
-@media screen and (max-width:480px) {
+.menu-alt__item:nth-child(even) .menu-alt-alt__link {
+  background-color: #3da639;
+}
+
+.menu-alt__item:not(.menu-alt-alt__item--active) .menu-alt-alt__link:hover,
+.menu-alt__item:not(.menu-alt-alt__item--active) .menu-alt-alt__link:active,
+.menu-alt__item:not(.menu-alt-alt__item--active) .menu-alt-alt__link:focus {
+  background-color: #1e531d;
+}
+
+.menu-alt__item:not(.menu-alt-alt__item--active) .menu-alt-alt__link:focus {
+  position: fixed;
+}
+
+.menu-alt__icon {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 480px) {
   .menu-alt__wrap {
-    font-size: .68em;
+    font-size: 0.68em;
   }
 
-  .btn--menu-alt {
-    font-size: 1em;
-  }
-
-  .menu-alt__item {
+  .menu-alt__wrap__item {
     font-size: 1.52em;
   }
+}
+
+.footer {
+  background-color: #e8e8e8;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.footer__heading,
+.footer--about {
+  line-height: 1.2;
+}
+
+.footer__heading {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.footer__heading--about {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.footer__link {
+  color: #444;
 }
