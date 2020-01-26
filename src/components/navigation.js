@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo from "./logo"
-import style from "../assets/css/index.css"
+import "../assets/css/index.css"
 
 export default class Navigation extends React.Component {
   constructor(props) {
