@@ -19,10 +19,13 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "stylelint-scss": "^3.11.1",
     "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0"
   },
   "keywords": [
     "gatsby",
@@ -33,6 +36,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "sass": "sass --watch src/assets/scss:src/assets/css",
+    "stylelint": "stylelint 'src/assets/scss/*.scss', 'src/assets/css/*.css' --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
