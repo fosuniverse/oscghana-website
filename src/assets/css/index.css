@@ -62,9 +62,21 @@ main {
   text-align: center;
   vertical-align: middle;
 }
+.btn:hover {
+  border: 1px solid #1e531d;
+  color: #1e531d;
+}
 .btn__primary {
   background: #3da639;
   color: #fff;
+}
+.btn__primary:hover {
+  background: #1e531d;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.btn__link:hover {
+  color: inherit;
 }
 
 @media screen and (max-width: 1023px) {

@@ -21,10 +21,10 @@ const IndexPage = () => (
             </div>
             <div className={"hero__call-to-action tw-w-full"}>
               <button className={"btn md:btn-w btn__primary lg:tw-mr-5"}>
-                <Link to={"/join/"}>Join Community</Link>
+                <Link className={"btn__link"} to={"/join/"}>Join Community</Link>
               </button>
               <button className={"btn md:btn-w"}>
-                <Link to={"/projects/"}>View Projects</Link>
+                <Link className={"btn__link"} to={"/projects/"}>View Projects</Link>
               </button>
             </div>
           </div>

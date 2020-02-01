@@ -10,9 +10,26 @@
   text-align: center;
   vertical-align: middle;
 
+  &:hover {
+    border: 1px solid #1e531d;
+    color: #1e531d;
+  }
+
   &__primary {
     background: #3da639;
     color: #fff;
+
+    &:hover {
+      background: #1e531d;
+      border: 1px solid transparent;
+      color: #fff;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: inherit;
+    }
   }
 }
 
