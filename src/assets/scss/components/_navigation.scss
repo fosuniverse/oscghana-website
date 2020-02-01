@@ -32,7 +32,7 @@
   &__link {
     font-size: 13px;
     text-transform: capitalize;
-    padding: 16px 20px 16px;
+    padding: 16px 0 16px;
     color: #999;
     line-height: 150%;
     display: inline-block;
@@ -63,6 +63,10 @@
 
     &__list {
       margin: 4px 0 0;
+    }
+
+    &__link {
+      padding: 16px 20px 16px;
     }
 
     &__toggler {
