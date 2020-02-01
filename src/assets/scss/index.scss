@@ -13,6 +13,10 @@ body {
   line-height: 160%;
 }
 
+button:focus {
+  outline: transparent;
+}
+
 a,
 a:active,
 a:hover,

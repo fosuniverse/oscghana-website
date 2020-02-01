@@ -10,32 +10,38 @@ export default class Navigation extends React.Component {
     this.state = { addClass: false }
   }
 
-  toggleMenuAlt() {
+  toggleMenu() {
     this.setState({ addClass: !this.state.addClass })
   }
 
   render() {
-    let menuAltWrapClass = ["menu-alt__wrap"]
-    let menuAltOverlayClass = ["menu-alt__overlay"]
+    let menuToggleClass = ["menu__list"]
+    let collapsible = document.getElementById("collapsible")
 
     if (this.state.addClass) {
-      menuAltOverlayClass.push("menu-alt__overlay--show")
-      menuAltWrapClass.push("menu-alt__wrap--show")
+      collapsible.style.height = collapsible.scrollHeight + "px"
+      menuToggleClass.push("menu__list--show")
+    } else {
+      if (collapsible) {
+        collapsible.style.height = "0"
+      }
     }
 
     return (
       <>
         <nav className={"menu"}>
           <div className={"container"}>
-            <div
-              className={
-                "tw-hidden sm:tw-hidden md:tw-block lg:tw-block xl:tw-block tw-clearfix"
-              }
-            >
+            <div className={"tw-block tw-clearfix"}>
               <Link to="/" className={"menu__logo"}>
                 <Logo />
               </Link>
-              <ul className={"menu__list"}>
+              <button
+                className={"menu__toggler"}
+                onClick={this.toggleMenu.bind(this)}
+              >
+                <i className={"fas fa-ellipsis-v"}> </i>
+              </button>
+              <ul id={"collapsible"} className={menuToggleClass.join(" ")}>
                 <li className={"menu__item"}>
                   <Link to="/" className={"menu__link"}>
                     Home
@@ -62,48 +68,6 @@ export default class Navigation extends React.Component {
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div
-              className={
-                "menu-alt tw-block sm:tw-block md:tw-hidden lg:tw-hidden xl:tw-hidden"
-              }
-            >
-              <button
-                className={"btn btn--menu-alt"}
-                onClick={this.toggleMenuAlt.bind(this)}
-              >
-                {this.state.addClass ? "-" : "+"}
-              </button>
-              <div className={menuAltWrapClass.join(" ")}>
-                <ul className={"menu-alt__list"}>
-                  <li className={"menu-alt__item menu-alt__item--1"}>
-                    <Link to="/about/" className={"menu-alt__link"}>
-                      <i className={"menu-alt__icon fas fa-anchor"}> </i>
-                    </Link>
-                  </li>
-                  <li className={"menu-alt__item menu-alt__item--2"}>
-                    <Link to="/projects/" className={"menu-alt__link"}>
-                      <i className={"menu-alt__icon fas fa-paint-roller"}> </i>
-                    </Link>
-                  </li>
-                  <li className={"menu-alt__item menu-alt__item--3"}>
-                    <Link to="/" className={"menu-alt__link"}>
-                      <i className={"menu-alt__icon fas fa-home"}> </i>{" "}
-                    </Link>
-                  </li>
-                  <li className={"menu-alt__item menu-alt__item--4"}>
-                    <Link to="/events/" className={"menu-alt__link"}>
-                      <i className={"menu-alt__icon fas fa-bullhorn"}> </i>
-                    </Link>
-                  </li>
-                  <li className={"menu-alt__item menu-alt__item--5"}>
-                    <Link to="/join/" className={"menu-alt__link"}>
-                      <i className={"menu-alt__icon fas fa-user-plus"}> </i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className={menuAltOverlayClass.join(" ")}> </div>
             </div>
           </div>
         </nav>
