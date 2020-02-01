@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 160%;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+a:active,
+a:hover,
+a:focus {
+  color: #3da639;
+  text-decoration: none;
+  background: 0 0;
+}
+
+main {
+  min-height: 500px;
+}

@@ -2,7 +2,7 @@
 
 .hero {
   background: #f7f7f7;
-  padding: 30px 0;
+  padding: 30px 0 15px;
 
   &__strong {
     color: #3da639;
@@ -17,12 +17,21 @@
     line-height: 1.5em;
     text-align: center;
   }
+
+  &__call-to-action {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 426px) {
   .hero {
     &__description {
       padding: 45px 40px 30px;
+    }
+
+    &__call-to-action {
+      padding: 0 40px;
+      margin-top: 15px;
     }
   }
 }
@@ -50,9 +59,13 @@
       float: right;
     }
 
+    &__call-to-action {
+      padding: 0 25px;
+    }
+
     &__description {
-      margin-top: 85px;
       padding: 0 25px 15px;
+      margin-top: 85px;
     }
 
     &__img {
@@ -65,9 +78,13 @@
 
 @media screen and (min-width: 1024px) {
   .hero {
+    &__call-to-action {
+      padding: 0 25px;
+    }
+
     &__description {
-      margin-top: 100px;
       padding: 15px 25px;
+      margin-top: 100px;
     }
 
     &__img {
@@ -78,9 +95,13 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
+    &__call-to-action {
+      padding: 0 15px;
+    }
+
     &__description {
-      margin-top: 125px;
       padding: 15px;
+      margin-top: 125px;
     }
 
     &__img {

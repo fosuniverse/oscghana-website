@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/index"
 import oscGhanaMap from "../images/brand/osc_ghana_map.svg"
@@ -17,6 +18,14 @@ const IndexPage = () => (
               </strong>{" "}
               to <strong className={"hero__strong"}>open source tools</strong>{" "}
               in Ghana.
+            </div>
+            <div className={"hero__call-to-action tw-w-full"}>
+              <button className={"btn md:btn-w btn__primary lg:tw-mr-5"}>
+                <Link to={"/join/"}>Join Community</Link>
+              </button>
+              <button className={"btn md:btn-w"}>
+                <Link to={"/projects/"}>View Projects</Link>
+              </button>
             </div>
           </div>
           <div className={"hero__banner tw-w-full md:tw-w-1/2"}>
