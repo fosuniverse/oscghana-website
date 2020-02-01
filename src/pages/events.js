@@ -2,11 +2,7 @@ import React from "react"
 import Layout from "../components"
 
 const Events = () => {
-  return (
-    <Layout>
-      <div style={{ textAlign: `center` }}>Events</div>
-    </Layout>
-  )
+  return <Layout main={<div style={{ textAlign: `center` }}>Events</div>} />
 }
 
 export default Events

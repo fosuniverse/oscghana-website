@@ -1,8 +1,15 @@
 import React from "react"
+import Navigation from "./navigation"
 
-const Header = () => (
-  // header holds all header related contents
-  <header></header>
-)
+const Header = ({ children }) => {
+  return (
+    <>
+      <header>
+        <Navigation />
+        {children}
+      </header>
+    </>
+  )
+}
 
 export default Header

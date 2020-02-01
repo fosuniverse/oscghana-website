@@ -3,9 +3,7 @@ import Layout from "../components"
 
 const Join = () => {
   return (
-    <Layout>
-      <div style={{ textAlign: `center` }}>Join Community</div>
-    </Layout>
+    <Layout main={<div style={{ textAlign: `center` }}>Join Community</div>} />
   )
 }
 

@@ -3,9 +3,7 @@ import Layout from "../components"
 
 const About = () => {
   return (
-    <Layout>
-      <div style={{ textAlign: `center` }}>About Community</div>
-    </Layout>
+    <Layout main={<div style={{ textAlign: `center` }}>About Community</div>} />
   )
 }
 

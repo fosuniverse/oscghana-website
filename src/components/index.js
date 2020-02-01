@@ -1,15 +1,13 @@
 import React from "react"
 
 import Header from "./header"
-import Navigation from "./navigation"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ header, main }) => {
   return (
     <>
-      <Navigation />
-      <Header />
-      <main>{children}</main>
+      <Header>{header}</Header>
+      <main>{main}</main>
       <Footer />
     </>
   )

@@ -3,9 +3,9 @@ import Layout from "../components"
 
 const Projects = () => {
   return (
-    <Layout>
-      <div style={{ textAlign: `center` }}>Projects & Resources</div>
-    </Layout>
+    <Layout
+      main={<div style={{ textAlign: `center` }}>Projects & Resources</div>}
+    />
   )
 }
 
