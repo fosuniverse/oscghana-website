@@ -8,6 +8,7 @@ export default class Navigation extends React.Component {
   constructor(props) {
     super(props)
     this.state = { addClass: false }
+    this.collapsible = React.createRef()
   }
 
   toggleMenu() {
@@ -16,7 +17,7 @@ export default class Navigation extends React.Component {
 
   render() {
     let menuToggleClass = ["menu__list"]
-    let collapsible = document.getElementById("collapsible")
+    let collapsible = this.collapsible.current
 
     if (this.state.addClass) {
       collapsible.style.height = collapsible.scrollHeight + "px"
@@ -41,7 +42,7 @@ export default class Navigation extends React.Component {
               >
                 <i className={"fas fa-ellipsis-v"}> </i>
               </button>
-              <ul id={"collapsible"} className={menuToggleClass.join(" ")}>
+              <ul ref={this.collapsible} className={menuToggleClass.join(" ")}>
                 <li className={"menu__item"}>
                   <Link to="/" className={"menu__link"}>
                     Home
