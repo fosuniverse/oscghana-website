@@ -1,0 +1,24 @@
+.primary-button {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  letter-spacing: 0;
+  opacity: 1;
+  background: #3da739 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 4px #00000029;
+  color: #ffffff;
+  border-radius: 5px;
+  font: 20px "Poppins";
+}
+.secondary-button {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  letter-spacing: 0;
+  opacity: 1;
+  box-shadow: 0px 1px 4px #00000029;
+  color: #3da739;
+  border-radius: 5px;
+  border: 2px solid #3da73966;
+  font: 20px "Poppins";
+}
