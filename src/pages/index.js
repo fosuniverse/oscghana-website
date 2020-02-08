@@ -1,10 +1,12 @@
 import React from "react"
+import Ghana from "../images/home/ghana.svg"
 
 const IndexPage = () => {
   return (
     <div>
       {/* A demo display text, delete before actual development */}
-      <center>HELLO, JOIN US TO BUILD THIS PAGE</center>
+      <center>WELCOME TO OPEN SOURCE COMMUNITY GHANA</center>
+      <img src={Ghana} alt="" />
     </div>
   )
 }
