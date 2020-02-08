@@ -24,6 +24,12 @@ npm install -g gatsby-cli
 cd oscghana-website
 ```
 
+- Install packages
+
+```sh
+npm install
+```
+
 - Create and checkout to a new branch for your feature
 
 ```sh
