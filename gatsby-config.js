@@ -1,22 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Open Source Community - Ghana`,
-    description: `Description of website for Open Source Community - Ghana.`,
-    canonicalUrl: "https://eloquent-northcutt-54c6c5.netlify.com",
-    author: `@oscghana`,
-    organization: {
-      name: "Open Source Community - Ghana",
-      url: "https://eloquent-northcutt-54c6c5.netlify.com",
-    },
-    categories: [
-      {
-        slug: "open-source",
-        name: "open source",
-      },
-    ],
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,21 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Open Source Community - Ghana`,
-        short_name: `OSC - Ghana`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#3DA639`,
-        display: `minimal-ui`,
-        icon: `src/images/logo/osi_keyhole_600X600_90ppi.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: "/src/images/svg/",
-        },
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`
+
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

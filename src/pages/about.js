@@ -1,10 +1,7 @@
 import React from "react"
-import Layout from "../components"
 
 const About = () => {
-  return (
-    <Layout main={<div style={{ textAlign: `center` }}>About Community</div>} />
-  )
+  return <div></div>
 }
 
 export default About

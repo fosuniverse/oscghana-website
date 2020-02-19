@@ -3,7 +3,6 @@
 Hey, there! 👋 We welcome all kinds of contributions, please feel free to contribute and/or ask questions.
 
 ## UI guide
-
 - The design team have designed the [UI AND COMPONENTS](https://xd.adobe.com/view/46c10c27-2956-4d5f-43c0-a59e2d991194-30f0/) be sure to check them and develop accordinly.
 
 ## Tech Stacks
@@ -19,6 +18,7 @@ Hey, there! 👋 We welcome all kinds of contributions, please feel free to cont
 - 🗃️ [GitHub](https://github.com): Hosting service for version control
 - 🚀 [Netlify](https://www.netlify.com/): For fast & continuous deployment
 
+
 ## Conventions
 
 > Conventions include generic patterns that ensure that written code adheres to certain formatting conventions.
@@ -32,8 +32,8 @@ Hey, there! 👋 We welcome all kinds of contributions, please feel free to cont
 ```js
 function textComponent() {
   return {
-    name: "OSCA",
-  }
+    name: "OSCA"
+  };
 }
 ```
 
@@ -44,13 +44,13 @@ function textComponent() {
 - Variables or elements with multiple words should always use an underscore between words.
 
 ```js
-const user_params = null
+const user_params = null;
 ```
 
 - Private methods should start with a leading underscore to separate them from public methods
 
 ```js
-const _inputType = inputType
+const _inputType = inputType;
 ```
 
 - Abbreviations should be avoided please to avoid confusion
@@ -61,8 +61,8 @@ const _inputType = inputType
 TextBox.defaultProps = {
   className: "",
   disabled: false,
-  inputType: "text",
-}
+  inputType: "text"
+};
 ```
 
 ### Styling
