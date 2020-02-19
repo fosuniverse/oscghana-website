@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "oscghana-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Description of website for Open Source Community - Ghana.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "@oscghana",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -11,6 +11,7 @@
     "gatsby-plugin-offline": "^3.0.27",
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-sharp": "^2.3.7",
@@ -18,19 +19,25 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "stylelint-scss": "^3.11.1",
     "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "osc-ghana"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "sass": "sass --watch src/assets/scss:src/assets/css",
+    "stylelint": "stylelint 'src/assets/scss/*.scss', 'src/assets/css/*.css' --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -38,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/oscghana/oscghana-website"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/oscghana/oscghana-website/issues"
   }
 }
