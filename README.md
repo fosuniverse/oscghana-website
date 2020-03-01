@@ -60,7 +60,7 @@ npm run serve
 
 _Gatsby starts a local HTML server for testing the built site. Remember to build the site using gatsby build before using this command._
 
-- Make Git commits
+- Make a Git commits
 
 ```sh
 git commit -m "commit messages"
